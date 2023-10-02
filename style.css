@@ -91,7 +91,8 @@ body{
     height: 100vh;
     max-width: 1300px;
     margin-left: auto;
-    margin-right:0 10px;
+    margin-right: auto;
+    padding: 0 10px;
 }
 
 .sidebar {
@@ -101,7 +102,6 @@ body{
     margin-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
-
 }
 .fa-twitter {
     color: var(--twitter-color);
@@ -149,7 +149,7 @@ body{
 
 .tweetBox {
     padding-bottom: 10px;
-    border-bottom: 2px solid gray;
+    border-bottom: 8px solid gray;
     padding-right: 10px;
     overflow-y: scroll;
 }
@@ -194,7 +194,7 @@ body{
     display: flex;
     align-items: flex-start;
     border-bottom: 1px solid gray;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 
 .post__body img {
@@ -202,6 +202,7 @@ body{
     object-fit: contain;
     border-radius: 20px;
 }
+
 .post__footer {
     display: flex;
     justify-content: space-between;
@@ -216,7 +217,7 @@ body{
 
 .post__headerSpecial {
     font-weight: 600;
-    font-size: 20px;
+    font-size: 12px;
     color: gray;
 }
 
@@ -226,8 +227,8 @@ body{
 }
 
 .post_headerDescription {
-    margin-bottom: 20px;
-    font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 
 .post__body {
@@ -275,7 +276,7 @@ body{
 }
 
 .widgets__widgetContainer {
-    margin-top: 20px;
+    margin-top: 15px;
     margin-left: 20px;
     padding: 20px;
     background-color: #71767b;
@@ -328,34 +329,49 @@ body{
     margin-right: 20px;
 }
 
-.who_to_follow_widget {
-    margin-top: 20px;
-    margin-left: 20px;
-    padding: 20px;
+.who_to_follow .recommendations {
+    padding: 10px;
+}
+
+
+.who_to_follow .recommendation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #71767b;
-    color: white;
+    margin-left: 20px;
     border-radius: 20px;
-    font-size: 20px;
-    font-weight: 400;
     opacity: 50%;
 }
 
-.accounts_to_follow {
-    display: flex;
+.recommendation img {
+    /* margin-top: 35px; */
+    /* margin-bottom: 30px; */
+    margin-left: 10px;
+    height: 40px;
+    width: 40px;
 }
 
-.who_to_follow_profiles {
-    display: flex;
+.recommendation h6 {
+    margin: 0 15px 0 20px;
 }
 
-.account__avatar {
+.p {
     display: flex;
-    border-radius: 50%;
-    height: 40%;
-    width: 40%;
-    outline-style: none;
-    box-sizing: border-box;
-    align-items: stretch;
+    height: 40px;
+    font-size: 10px;
+    text-align: center;
+}
+
+.button .follow {
+    font-size: 15px;
+    font-weight: 900;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+    
 }
 
 
